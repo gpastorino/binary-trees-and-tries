@@ -6,6 +6,32 @@ Because of how a binary tree is structured elements that are inserted can be pro
 
 A binary tree is effective inserting, deleting, and searching elements.  To insert and delete, a binary tree is just consisted of nodes that point to other nodes.  If we need to insert, the nodes just have to insert to an available leave where that element could be; and then because of how the tree is ordered there's nothing extra needed. This is more effective than having an ordered array because the array has to maintain that particular order when we insert new values to it.  For searching, binary tree has the advantage of binary search which will cut in half the time it takes to do a linear search of traversing through every element.  This is because in a binary search we take split the array at the midpoint and take a subset of where the element could be and then we just repeat until it is found. Doing binary search,  we divide n by 2 until it is found {n/(2^k) = 1} which can rewritten as T(n) = log n. 
 
+What is a Trie?
+
+A trie (pronounced:  “try”), also called digital tree and sometimes radix tree or prefix tree (as they can be searched by prefixes), is a kind of search tree.
+Search Tree:  An ordered tree data structure that is used to store a dynamic set or associative array where the keys are usually strings
+The key part for each node in one of these Trees is (usually) a string. 
+The root node is an empty string.
+Letters are added to the string key for each node, moving away from the root.  
+Actual values are associated only with the “Leaves” of the trie.  
+
+
+
+Example of use in the Real World:
+
+
+Word completion in a google search field. 
+It is used when there’s a partially completed field, and there’s a want to provide a list of possibilities connected to that partially completed field. 
+In this example, all the descendents of a node have a common prefix.  
+
+Time complexity of O(L)
+
+
+
+
+
+
+
 ## links
 https://www.geeksforgeeks.org/binary-tree-data-structure/
 https://www.geeksforgeeks.org/complexity-different-operations-binary-tree-binary-search-tree-avl-tree/
@@ -16,3 +42,6 @@ https://www.google.com/amp/s/www.geeksforgeeks.org/trie-insert-and-search/amp/
 https://link.medium.com/SU8DcC4SH4
 https://www.google.com/amp/s/www.geeksforgeeks.org/binary-tree-set-1-introduction/amp/
 
+
+https://www.geeksforgeeks.org/trie-insert-and-search/
+https://www.geeksforgeeks.org/advantages-trie-data-structure/amp/
